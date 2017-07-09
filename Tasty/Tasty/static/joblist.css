@@ -1,0 +1,33 @@
+
+body{
+  margin:10px;
+  font:small Georgia,"Times New Roman";
+  background: #695544;
+  color:#444;
+}
+
+.list-group div{
+  padding-left:2em;
+  list-style:none;
+  display:block;
+  width:300px;
+  margin:0 20px;
+}
+
+.menu{
+  margin:0 0 0 155px;
+  padding-left: 2em;
+  list-style: none;
+  background: #695544;
+  display:none;
+}
+
+.jobLi{
+  width:900px;
+  padding:5px;
+  background: white;
+  font-size: 15px;
+}
+
+
+

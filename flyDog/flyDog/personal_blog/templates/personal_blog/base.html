@@ -1,0 +1,46 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="html,css,javascript,jquery,git,python,sql,linux,golang,软件,编程,开发,互联网">
+    <meta name="description" content="研究互联网产品和技术，笔记分享">
+    <base target="_blank" />
+    <title>{% block title %}flyDog的个人博客{% endblock %}</title>
+    <script type="text/javascript" src="{% static 'personal_blog/js/jquery-3.0.0.js' %}"></script>
+    <script type="text/javascript" src="{% static 'personal_blog/js/bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'personal_blog/js/highlight.min.js' %}"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <link rel="stylesheet" type="text/css" href="{% static 'personal_blog/css/solarized_dark.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'personal_blog/css/bootstrap.min.css' %}">
+    {% block  link%}{% endblock %}
+</head>
+<body>
+    {% block content_title %}
+<div class="title-bar">
+    <div class="title">
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="{% url 'personal_blog:homepage'%}">flyDog的个人博客</a></li>
+        <li role="presentation"><a href="{% url 'personal_blog:blog_wiki' 0%}">python</a></li>
+        <li role="presentation"><a href="{% url 'personal_blog:blog_wiki' 1%}">JS</a></li>
+        <li role="presentation"><a href="{% url 'personal_blog:blog_wiki' 2%}">golang</a></li>
+        <li role="presentation"><a href="{% url 'personal_blog:blog_wiki' 3%}">django</a></li>
+        <li role="presentation"><a href="{% url 'personal_blog:blog_wiki' 4%}">html</a></li>
+        <li role="presentation"><a href="{% url 'personal_blog:blog_wiki' 5%}">git</a></li>
+        <li role="presentation"><a href="{% url 'personal_blog:blog_wiki' 6%}">book</a></li>
+        <li role="presentation"><a href="{% url 'personal_blog:blog_wiki' 7%}">other</a></li>
+        <form action="{% url 'personal_blog:blog_search' %}" method="get">
+            <input type="text" name="Search" id="Search" value="">
+            <input type="submit" value="Search">
+        </form>
+    </ul>
+    </div>
+</div>
+    {% endblock %}
+    {% block content %}{% endblock %}
+    {% block footer %}
+    <hr>
+    <p style="clear:both;">Thanks for visiting my site.</p>
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,57 @@
+.homepage-layout {
+    border-bottom:1px solid #888888;
+    margin:0px 40em 1px 1em;
+	background:#DDDDDD;
+    font-size:17px;
+}
+
+.title-bar {
+    margin:1px;
+    background:#FFFFEE;
+}
+
+.title {
+    height:57px;
+	padding:15px 10em 15px 10em;
+    margin:0px 10em 0px 1em;
+}
+
+.title-in {
+    float: left;
+    margin:0px 30px 0px 30px;
+}
+
+.layout-a {
+    font-size:1.8em;
+    color: #FFFFFF;
+}
+
+.title-detail {
+    font-size:1.7em;
+    color: #0000CD;
+}
+
+.body-in {
+    margin:0px 0px 0px 30px;
+}
+
+.detail-body-left {
+    float:left;
+    margin:0px 10px 0px 0px;
+    width:30em;
+}
+
+.detail-body-right {
+    float:right;
+    margin:0px 5em 0px 0px;
+    width:60em;
+}
+
+.wiki-in {
+    margin:10px 10em 0px 10em;
+}
+
+.wiki-a {
+    font-size:1.8em;
+    color: #000000;
+}

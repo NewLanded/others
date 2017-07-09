@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block title %}timePlus{% endblock %}
+
+{% block content %}
+In {{ offset }} hour(s), it will be {{ dt|date:"F j, Y" }}.
+{% endblock %}

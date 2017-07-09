@@ -1,0 +1,19 @@
+
+body{
+  margin:10px;
+  font:small Georgia,"Times New Roman";
+  background: #a5866a;
+  color:#444;
+}
+
+#ul-p{
+  padding-left:2em;
+  list-style:none;
+  display:block;
+  width:300px;
+  margin:0 -25px;
+}
+
+
+
+

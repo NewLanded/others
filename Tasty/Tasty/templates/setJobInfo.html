@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}setJobInfo{% endblock %}
+
+{% block content %}
+    <ul id="ul-p"><p>输入需要查询的职业名称</p></ul>
+    <form id="keyword">
+        <div class="form-class">
+            <input type="text" class="input-class" name="keyword" placeholder="职业名称" >
+            <button type="button" onclick="setJobInfo(this)" id="aaaa">查询数据</button>
+        </div>
+    </form>
+{% endblock %}
+{% block static %}
+    <script type="text/javascript" src="/static/setJobInfo.js"></script>
+    <link href="/static/setJobInfo.css" rel="stylesheet">
+{% endblock %}

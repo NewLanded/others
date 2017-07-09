@@ -1,0 +1,13 @@
+{% extends "personal_blog/base.html" %}
+{% load staticfiles %}
+{% block  link%}
+<link rel="stylesheet" type="text/css" href="{% static 'personal_blog/css/personal_blog.css' %}">
+{% endblock %}
+{% block content %}
+<div class="homepage-layout">
+    <div class="list-group-item active">搜索结果</div>
+    {% for blog in blogs %}
+    <a href="{% url 'personal_blog:blog_detail' blog.id %}" class="list-group-item">{{ blog.title }}</a>
+    {% endfor %}
+</div>
+{% endblock %}

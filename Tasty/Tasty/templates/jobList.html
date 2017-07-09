@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}jobList{% endblock %}
+
+{% block content %}
+    <div class="list-group">
+    {% for companyName in companyNames %}
+        <div><button type="button" class="list-group-item" name={{ companyName.0 }} id={{ companyName.0 }} >{{ companyName.1 }}</button></div>
+        <ul class="menu" id="ul{{ companyName.0 }}"></ul>
+    {% endfor %}
+    </div>
+{% endblock %}
+{% block static %}
+    <link href="/static/joblist.css" rel="stylesheet">
+    <script type="text/javascript" src="/static/joblist.js"></script>
+{% endblock %}
